@@ -1,0 +1,3 @@
+= Chatterino Plugins
+
+Some chatterino plugins I've made. They may break as the plugin API changes.
