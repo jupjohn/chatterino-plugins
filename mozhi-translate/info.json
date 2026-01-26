@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Chatterino/chatterino2/master/docs/plugin-info.schema.json",
+  "name": "Mozhi Translate",
+  "description": "Translates messages using a Mozhi instance",
+  "authors": ["jammehge"],
+  "homepage": "https://github.com/jupjohn/chatterino-plugins",
+  "tags": ["chat","moderation","accessability"],
+  "version": "0.0.1",
+  "license": "MIT",
+  "permissions": [
+    { "type": "network", "__comment": "Required to make requests to the backend translate service" }
+  ]
+}
