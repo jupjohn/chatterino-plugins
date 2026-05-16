@@ -1,0 +1,34 @@
+= Twitch Message Pinning
+
+This plugin allows pinning/unpinning of messages in Twitch, using the new Helix pinning APIs.
+
+== Installation
+
+I'm assuming you're technical, I'm too lazy to hand-hold.
+
+1. Download the files in this folder to a folder under your Chatterino plugins folder (i.e. `%APPDATA%\Chatterino2\Plugins\MessagePinning\`)
+** On another OS? See https://wiki.chatterino.com/Settings/#where-is-my-chatterino-folder-located
+2. Open your chatterino settings file (i.e. `%APPDATA%\Chatterino2\Settings\settings.json`) and copy the `oauthToken` value for your account
+** Never share this token with anyone
+** It should be a string of letters & numbers over 20 characters long
+** Don't copy the quotes, just what's inside them
+3. In the downloaded `init.lua` file, paste the token into the quotes on line 4 & save
+4. Clear the token from your clipboard (either copy something else random, or if you have clipboard history in Windows, `Win + V` -> `Delete`)
+5. In Chatterino's "Plugins" settings tab, enable the plugin
+
+== Usage
+
+=== Message pinning
+
+*Mod icons*: Under Settings -> Moderation -> Moderation buttons, add the following: `/pin-msg-id-plugin {msg.id}`
+*Right click action*: If you want to be able to right click messages and pin them instead, create a custom Chatterino command (i.e. `/pinthis`) with the value `/pin-msg-id-plugin {msg.id}` and check the "Show In Message Menu" checkbox
+
+=== Unpinning
+
+Use the `/unpin-msg-plugin` command. If you don't like the name, you can create a Chatterino command (i.e. `/unpin` with the value `/unpin-msg-plugin`).
+
+*WARNING*: If you create a custom command, it may conflict with a future command when Chatterino implements message pin support. Remember that - that's on you.
+
+== Support
+
+None lol.

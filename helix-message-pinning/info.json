@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Chatterino/chatterino2/master/docs/plugin-info.schema.json",
+  "name": "Message Pinning (temporary)",
+  "description": "Pins messages using Twitch's new 2026-05-15 pinned message APIs.",
+  "authors": ["jammehge"],
+  "homepage": "https://github.com/jupjohn/chatterino-plugins",
+  "tags": ["chat","moderation"],
+  "version": "0.0.1",
+  "license": "MIT",
+  "permissions": [
+    { "type": "Network", "__comment": "Required to make requests to Twitch for message pinning" }
+  ]
+}
